@@ -84,7 +84,7 @@
 										<p>Calculus</p>
 									</li>
 									<li>
-										<span class="icon solid major style3  fas fa-vial"></span>
+										<span class="icon solid major style3fas fa-vial"></span>
 										<h3>Chemistry</h3>
 										<br>
 										<p>Introductory Chemistry</p>
@@ -182,21 +182,22 @@
 						<!-- Get Started -->
 							<section id="cta" class="main special">
 								<div class="container">
-									<form id="contact"  novalidate onsubmit="return postToGoogle();">
+									<form id="contact"novalidate onsubmit="return postToGoogle();">
 										<h1>Interested In Scheduling a Free Introductory Session?</h1>
 										<h2>Please leave your name and contact information below. <br> I'll get back to you as soon as possible!</h2>
-									  <fieldset>
-										<h2 align = "left"> Name</h2>
-										<input  placeholder="First and Last Name"
+									<fieldset>
+										<h2 align = "left">Name</h2>
+										<input
+												placeholder="First and Last Name"
 												type="text" 
 												name="entry.939243699" 
 												data-name="Name" 
 												id="Name" 
-												required>
-									  </fieldset>
-									  <br>
-									  <fieldset>
-										<h2 align = "left"> Email Address or Phone Number</h2>
+												required = "False">
+									</fieldset>
+									<br>
+									<fieldset>
+										<h2 align = "left">Email Address or Phone Number</h2>
 										
 										<input 
 												placeholder="Email or Phone Number" 
@@ -204,57 +205,56 @@
 												name="entry.1317085623" 
 												data-name="Email" 
 												id="Email" 
-												required>
-									  </fieldset>
-									  <br>
-									  <fieldset>
-										<h2 align = "left"> Subject and Additional Comments</h2>
-										<textarea
+												required = "False">
+									</fieldset>
+									<br>
+									<fieldset>
+										<h2 align = "left">Subject and Additional Comments</h2>
+										<textarea 
 												placeholder="Subject and Additional Comments"
 												type="Message"
 												data-name="Message"
 												id="Message"
 												name="entry.1942181550"
-												required>
-										</textarea>
-									  </fieldset>
-									  <br>
-									  <a><button class="button primary" type="submit" id="contact-submit" onclick="myAlert()">Submit</a>
+												required = "False"></textarea>
+									</fieldset>
+									<br>
+									<a><button class="button primary" type="submit" id="contact-submit" onclick="myAlert()">Submit</a>
 
 									</form>
-								  </div>
+								</div>
 								
-								  <script>
+								<script>
 									function postToGoogle() {
-									  var field1 = $("#Name").val();
-									  var field2 = $("#Email").val();
-									  var field3 = $("#Message").val();
+									var field1 = $("#Name").val();
+									var field2 = $("#Email").val();
+									var field3 = $("#Message").val();
 								
-									  $.ajax({
+									$.ajax({
 										url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSEOESvtucAsr0cBHtK3F5VuPX-tULbLSF-lxMll7g7_W_RQ/formResponse",
 										data: {
-										  "entry.939243699": field1,
-										  "entry.1317085623": field2,
-										  "entry.1942181550": field3,
+										"entry.939243699": field1,
+										"entry.1317085623": field2,
+										"entry.1942181550": field3,
 										},
 										type: "POST",
 										dataType: "xml",
 										success: function (d) {
-										  $('#contact').trigger('reset');
+										$('#contact').trigger('reset');
 										},
 										error: function (x, y, z) {
-										  $('#contact').trigger('reset');
+										$('#contact').trigger('reset');
 										}
-									  });
-									  return false;
+									});
+									return false;
 									}
 
-								  </script>
-								  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">	
-								  </script>
-								  <script>
+								</script>
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">	
+								</script>
+								<script>
 									function myAlert() {
-									  alert("Thank you! Your Response has been recorded.");
+									alert("Thank you! Your Response has been recorded.");
 									}
 								</script>
 
