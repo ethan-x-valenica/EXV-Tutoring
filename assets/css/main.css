@@ -120,7 +120,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #495df2;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2185,7 +2185,7 @@ input, select, textarea {
 	input[type="radio"]:checked + label:before {
 		background-color: #ffffff;
 		border-color: #ffffff;
-		color: #935d8c;
+		color: #495df2;
 	}
 
 	input[type="checkbox"]:focus + label:before,
