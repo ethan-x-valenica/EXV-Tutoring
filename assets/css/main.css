@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+		background-color: #3e4fcc;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #385fb4 15%, #637bb7 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #385fb4 15%, #637bb7 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #385fb4 15%, #637bb7 85%);
@@ -2167,7 +2167,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #935d8c;
+			background: #3e4fcc;
 		}
 
 	input[type="checkbox"] + label,
