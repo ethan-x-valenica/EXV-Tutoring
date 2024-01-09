@@ -26,7 +26,8 @@
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1>EXV Tutoring</h1>
 						<p>Unleashing Potential, Transforming Grades</p>
-						<a href="#cta" class="button primary">Click to Sign Up for a Free Introductory Meeting</a>
+						<a href="#cta" class="button primary" >Click to Sign Up for a Free Introductory Meeting</a>
+						
 							
 						
 
@@ -219,13 +220,15 @@
 												required = "False"></textarea>
 									</fieldset>
 									<br>
-									<a><button class="button primary" type="submit" id="contact-submit" onclick="myAlert()">Submit</a>
+										
+										<a class="button primary" type="submit" id="contact-submit"onclick="postToGoogle()">Submit</a>
 
 									</form>
 								</div>
 								
 								<script>
 									function postToGoogle() {
+									alert("Thank you! Your Response has been recorded. I'll reach out to you at "+ $("#Email").val() +" as soon as possible.");
 									var field1 = $("#Name").val();
 									var field2 = $("#Email").val();
 									var field3 = $("#Message").val();
@@ -252,15 +255,8 @@
 								</script>
 								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">	
 								</script>
-								<script>
-									function myAlert() {
-									alert("Thank you! Your Response has been recorded.");
-									}
-								</script>
-
 
 							</section>
-
 					</div>
 
 				<!-- Footer -->
